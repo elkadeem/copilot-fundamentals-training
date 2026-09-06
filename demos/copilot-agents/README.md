@@ -39,7 +39,10 @@ Low: minor annoyance with an easy workaround. Medium: meaningful impact with a w
 | P3 | Minor impact or improvement; address when capacity allows. |
 
 ### Default severity-to-priority mapping
-High → P1; Medium → P2; Low → P3. Use P0 for an active critical incident, regardless of initial severity.
+High → P1 (P0 for active data loss); Medium → P2; Low → P3. Use P0 for an active critical incident, regardless of initial severity.
 
 ### How to triage in 60 seconds
-1. Confirm impact and workaround. 2. Assign severity. 3. Apply the default priority (or P0). 4. Assign owner and next action.
+1. Confirm impact and workaround.
+2. Assign severity.
+3. Apply the default priority (or P0).
+4. Assign owner and next action.
