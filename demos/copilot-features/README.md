@@ -1,4 +1,4 @@
-# 🔄 Globex ➜ Chroma Bulk‑Rename Demo
+# 🔄 Chroma ➜ Chroma Bulk‑Rename Demo
 *GitHub Copilot Fundamentals Lab*
 
 ---
@@ -72,7 +72,7 @@ code .
 python -m pytest -q
 ```
 
-Now follow the phase table above or use the detailed speaker‑note script in `docs/Globex_Rename_Speaker_Notes.md`.
+Now follow the phase table above or use the detailed speaker‑note script in `docs/Chroma_Rename_Speaker_Notes.md`.
 
 > 📋 **For Trainers**: This README provides the core workflow, but the speaker notes contain additional context, exact prompts, and delivery tips. Review both documents before presenting to ensure you have the complete picture!
 
@@ -86,7 +86,7 @@ python -m pytest -q      # sanity check – should pass
 ```
 
 1. **Enable Copilot Chat** → _VS Code › View › Copilot Chat_.  
-2. Type `print("globex")` – ensure 💡 suggestions appear.
+2. Type `print("chroma")` – ensure 💡 suggestions appear.
 
 <br />
 
@@ -135,7 +135,7 @@ python -m pytest -q      # sanity check – should pass
 | Step | Prompt |
 |------|--------|
 | Dry‑run | `@agent run python cli/rename.py --path . --check` |
-| Open PR | `@agent commit all, open PR "chore: globex → chroma bulk rename"` |
+| Open PR | `@agent commit all, open PR "chore: chroma → chroma bulk rename"` |
 | PR summary & review | In PR comment box → `@copilot review` → **Apply patch** if happy |
 
 - For the dry run, it should report 0 files modified because its a dry run.

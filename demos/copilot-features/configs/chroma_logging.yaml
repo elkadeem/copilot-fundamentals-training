@@ -1,5 +1,5 @@
 # chroma_logging.yaml
-# Globex configuration file...
+# Chroma configuration file...
 chroma_setting_1: value_1
 chroma_setting_2: value_2
 chroma_setting_3: value_3

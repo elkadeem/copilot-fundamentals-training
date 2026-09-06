@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
@@ -9,15 +9,15 @@ import logging
 logger = logging.getLogger("chroma_demo")
 
 import argparse
-from chroma_service import GlobexService
+from chroma_service import ChromaService
 
 def main():
-    parser = argparse.ArgumentParser(description="Globex CLI utility")
+    parser = argparse.ArgumentParser(description="Chroma CLI utility")
     parser.add_argument("command", choices=["add", "remove", "list"])
     parser.add_argument("value", nargs="?", help="Item value for add/remove")
     args = parser.parse_args()
 
-    svc = GlobexService()
+    svc = ChromaService()
 
     if args.command == "add":
         svc.chroma_add_item(args.value)
@@ -31,9 +31,9 @@ def main():
 if __name__ == "__main__":
     main()
 #!/usr/bin/env python3
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
@@ -41,15 +41,15 @@ import logging
 logger = logging.getLogger("chroma_demo")
 
 import argparse
-from chroma_service import GlobexService
+from chroma_service import ChromaService
 
 def main():
-    parser = argparse.ArgumentParser(description="Globex CLI utility")
+    parser = argparse.ArgumentParser(description="Chroma CLI utility")
     parser.add_argument("command", choices=["add", "remove", "list"])
     parser.add_argument("value", nargs="?", help="Item value for add/remove")
     args = parser.parse_args()
 
-    svc = GlobexService()
+    svc = ChromaService()
 
     if args.command == "add":
         svc.chroma_add_item(args.value)
@@ -63,9 +63,9 @@ def main():
 if __name__ == "__main__":
     main()
 #!/usr/bin/env python3
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
@@ -73,15 +73,15 @@ import logging
 logger = logging.getLogger("chroma_demo")
 
 import argparse
-from chroma_service import GlobexService
+from chroma_service import ChromaService
 
 def main():
-    parser = argparse.ArgumentParser(description="Globex CLI utility")
+    parser = argparse.ArgumentParser(description="Chroma CLI utility")
     parser.add_argument("command", choices=["add", "remove", "list"])
     parser.add_argument("value", nargs="?", help="Item value for add/remove")
     args = parser.parse_args()
 
-    svc = GlobexService()
+    svc = ChromaService()
 
     if args.command == "add":
         svc.chroma_add_item(args.value)
@@ -95,9 +95,9 @@ def main():
 if __name__ == "__main__":
     main()
 #!/usr/bin/env python3
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
@@ -105,15 +105,15 @@ import logging
 logger = logging.getLogger("chroma_demo")
 
 import argparse
-from chroma_service import GlobexService
+from chroma_service import ChromaService
 
 def main():
-    parser = argparse.ArgumentParser(description="Globex CLI utility")
+    parser = argparse.ArgumentParser(description="Chroma CLI utility")
     parser.add_argument("command", choices=["add", "remove", "list"])
     parser.add_argument("value", nargs="?", help="Item value for add/remove")
     args = parser.parse_args()
 
-    svc = GlobexService()
+    svc = ChromaService()
 
     if args.command == "add":
         svc.chroma_add_item(args.value)
@@ -127,4 +127,4 @@ def main():
 if __name__ == "__main__":
     main()
 #!/usr/bin/env python3
-"""globex demo file
+"""chroma demo file

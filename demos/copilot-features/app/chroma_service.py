@@ -1,13 +1,13 @@
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
 logger = logging.getLogger("chroma_demo")
 
-class GlobexService:
+class ChromaService:
     """A simple service that pretends to handle requests."""
 
     def __init__(self):
@@ -28,16 +28,16 @@ class GlobexService:
     def chroma_list_items(self):
         """Return a copy of the internal data list."""
         return list(self._data)
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
 logger = logging.getLogger("chroma_demo")
 
-class GlobexService:
+class ChromaService:
     """A simple service that pretends to handle requests."""
 
     def __init__(self):
@@ -58,16 +58,16 @@ class GlobexService:
     def chroma_list_items(self):
         """Return a copy of the internal data list."""
         return list(self._data)
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
 logger = logging.getLogger("chroma_demo")
 
-class GlobexService:
+class ChromaService:
     """A simple service that pretends to handle requests."""
 
     def __init__(self):
@@ -88,16 +88,16 @@ class GlobexService:
     def chroma_list_items(self):
         """Return a copy of the internal data list."""
         return list(self._data)
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
 logger = logging.getLogger("chroma_demo")
 
-class GlobexService:
+class ChromaService:
     """A simple service that pretends to handle requests."""
 
     def __init__(self):
@@ -118,16 +118,16 @@ class GlobexService:
     def chroma_list_items(self):
         """Return a copy of the internal data list."""
         return list(self._data)
-"""globex demo file
+"""chroma demo file
 
-This file is part of the Globex Ltd codebase and will soon be migrated to Chroma Inc.
+This file is part of the Chroma Inc. codebase.
 Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
 logger = logging.getLogger("chroma_demo")
 
-class GlobexService:
+class ChromaService:
     """A simple service that pretends to handle requests."""
 
     def __init__(self):
