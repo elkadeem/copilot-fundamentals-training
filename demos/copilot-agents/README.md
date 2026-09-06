@@ -32,7 +32,27 @@ We currently triage support tickets using Severity only.
 - Medium means a meaningful user impact but workarounds exist
 - High means blocks key workflows or causes data loss
 
-### Current rules
+### Priority levels
+- **P0 — Critical:** Active widespread outage, security incident, or data loss; respond immediately.
+- **P1 — High:** Major customer impact or a blocked key workflow; address next.
+- **P2 — Normal:** Meaningful impact with a workaround; schedule in the current planning cycle.
+- **P3 — Low:** Minor impact or improvement; address when capacity allows.
+
+### Default severity-to-priority mapping
+| Severity | Default priority |
+| --- | --- |
+| High | P1 |
+| Medium | P2 |
+| Low | P3 |
+
+Use P0 only when the ticket describes an active critical incident, regardless of its initial severity.
+
+### How to triage in 60 seconds
+1. Confirm the customer impact and whether a workaround exists.
+2. Assign the severity.
+3. Apply the default priority, or escalate an active critical incident to P0.
+4. Assign an owner and record the next action.
+
+### Triage rules
 - Triage happens daily
-- High severity should be addressed first
-- We do not currently define priority labels, default ownership, or a fast triage checklist
+- Address P0 tickets immediately, then work in priority order.
