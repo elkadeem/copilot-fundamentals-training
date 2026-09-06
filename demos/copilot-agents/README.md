@@ -28,7 +28,11 @@ Paste the ISSUE.md file into a new issue in that repository.
 Triage daily: confirm impact and workaround, assign severity and priority, then assign an owner and next action.
 
 ### Severity levels
-Low: minor annoyance with an easy workaround. Medium: meaningful impact with a workaround. High: blocks key workflows or causes data loss.
+| Severity | Meaning |
+| --- | --- |
+| Low | Minor annoyance with an easy workaround. |
+| Medium | Meaningful impact with a workaround. |
+| High | Blocks key workflows or causes data loss. |
 
 ### Priority levels
 | Priority | Meaning |
