@@ -1,120 +1,19 @@
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
+"""Tests for Chroma utility functions."""
+from datetime import datetime, timezone
 
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
+from app.chroma_utils import chroma_generate_id, chroma_slugify, chroma_timestamp
 
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
 
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
+def test_slugify():
+    assert chroma_slugify("Hello Chroma") == "hello-chroma"
 
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
 
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
+def test_generate_id_uses_chroma_prefix_by_default():
+    assert chroma_generate_id().startswith("chroma-")
 
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
 
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
+def test_timestamp_is_utc():
+    timestamp = chroma_timestamp()
 
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
-
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
-
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
-
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
-
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
-
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
-
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
-
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
-
-def test_remove():
-    svc = ChromaService()
-    svc.chroma_add_item("bar")
-    assert svc.chroma_remove_item("bar") is True
-    assert "bar" not in svc.chroma_list_items()
-"""Tests for Chroma demo."""
-import pytest
-from app.chroma_service import ChromaService
-
-def test_add_and_list():
-    svc = ChromaService()
-    svc.chroma_add_item("foo")
-    assert "foo" in svc.chroma_list_items()
+    assert timestamp.endswith("Z")
+    assert datetime.fromisoformat(timestamp.removesuffix("Z") + "+00:00").tzinfo == timezone.utc

@@ -17,6 +17,8 @@ import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
     """Rename a literal source prefix in Python file contents under root_path."""
+    if not source_prefix.strip():
+        raise ValueError("source_prefix must not be empty")
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
@@ -48,6 +50,8 @@ import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
     """Rename a literal source prefix in Python file contents under root_path."""
+    if not source_prefix.strip():
+        raise ValueError("source_prefix must not be empty")
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
@@ -79,6 +83,8 @@ import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
     """Rename a literal source prefix in Python file contents under root_path."""
+    if not source_prefix.strip():
+        raise ValueError("source_prefix must not be empty")
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
@@ -110,6 +116,8 @@ import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
     """Rename a literal source prefix in Python file contents under root_path."""
+    if not source_prefix.strip():
+        raise ValueError("source_prefix must not be empty")
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
