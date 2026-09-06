@@ -72,9 +72,9 @@ code .
 python -m pytest -q
 ```
 
-Now follow the phase table above or use the detailed speaker‑note script in `docs/Chroma_Rename_Speaker_Notes.md`.
+Now follow the phase table above to complete the rename.
 
-> 📋 **For Trainers**: This README provides the core workflow, but the speaker notes contain additional context, exact prompts, and delivery tips. Review both documents before presenting to ensure you have the complete picture!
+> 📋 **For Trainers**: This README provides the core workflow, including prompts and delivery tips.
 
 ## ⏱️ Phase 0 · Environment Prep (1 min)
 

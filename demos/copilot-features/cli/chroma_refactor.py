@@ -11,9 +11,12 @@ logger = logging.getLogger("chroma_demo")
 
 Intentionally simplistic for demo purposes.
 """
-import os, re, sys, pathlib
+import pathlib
+import re
+import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
+    """Rename a literal source prefix in Python file contents under root_path."""
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
@@ -39,9 +42,12 @@ logger = logging.getLogger("chroma_demo")
 
 Intentionally simplistic for demo purposes.
 """
-import os, re, sys, pathlib
+import pathlib
+import re
+import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
+    """Rename a literal source prefix in Python file contents under root_path."""
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
@@ -67,9 +73,12 @@ logger = logging.getLogger("chroma_demo")
 
 Intentionally simplistic for demo purposes.
 """
-import os, re, sys, pathlib
+import pathlib
+import re
+import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
+    """Rename a literal source prefix in Python file contents under root_path."""
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
@@ -95,9 +104,12 @@ logger = logging.getLogger("chroma_demo")
 
 Intentionally simplistic for demo purposes.
 """
-import os, re, sys, pathlib
+import pathlib
+import re
+import sys
 
 def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma_"):
+    """Rename a literal source prefix in Python file contents under root_path."""
     pattern = re.compile(re.escape(source_prefix))
     for path in pathlib.Path(root_path).rglob('*.py'):
         text = path.read_text()
