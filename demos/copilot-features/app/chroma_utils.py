@@ -5,18 +5,18 @@ Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
-logger = logging.getLogger("globex_demo")
+logger = logging.getLogger("chroma_demo")
 
-def globex_slugify(text: str) -> str:
+def chroma_slugify(text: str) -> str:
     """Convert text to a URL-friendly slug."""
     return text.lower().replace(" ", "-")
 
-def globex_generate_id(prefix: str = "globex") -> str:
+def chroma_generate_id(prefix: str = "globex") -> str:
     """Generate a pseudo‑random identifier."""
     import uuid
     return f"{prefix}-{uuid.uuid4()}"
 
-def globex_timestamp() -> str:
+def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
     return datetime.datetime.utcnow().isoformat() + "Z"
@@ -27,18 +27,18 @@ Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
-logger = logging.getLogger("globex_demo")
+logger = logging.getLogger("chroma_demo")
 
-def globex_slugify(text: str) -> str:
+def chroma_slugify(text: str) -> str:
     """Convert text to a URL-friendly slug."""
     return text.lower().replace(" ", "-")
 
-def globex_generate_id(prefix: str = "globex") -> str:
+def chroma_generate_id(prefix: str = "globex") -> str:
     """Generate a pseudo‑random identifier."""
     import uuid
     return f"{prefix}-{uuid.uuid4()}"
 
-def globex_timestamp() -> str:
+def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
     return datetime.datetime.utcnow().isoformat() + "Z"
@@ -49,18 +49,18 @@ Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
-logger = logging.getLogger("globex_demo")
+logger = logging.getLogger("chroma_demo")
 
-def globex_slugify(text: str) -> str:
+def chroma_slugify(text: str) -> str:
     """Convert text to a URL-friendly slug."""
     return text.lower().replace(" ", "-")
 
-def globex_generate_id(prefix: str = "globex") -> str:
+def chroma_generate_id(prefix: str = "globex") -> str:
     """Generate a pseudo‑random identifier."""
     import uuid
     return f"{prefix}-{uuid.uuid4()}"
 
-def globex_timestamp() -> str:
+def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
     return datetime.datetime.utcnow().isoformat() + "Z"
@@ -71,18 +71,18 @@ Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
-logger = logging.getLogger("globex_demo")
+logger = logging.getLogger("chroma_demo")
 
-def globex_slugify(text: str) -> str:
+def chroma_slugify(text: str) -> str:
     """Convert text to a URL-friendly slug."""
     return text.lower().replace(" ", "-")
 
-def globex_generate_id(prefix: str = "globex") -> str:
+def chroma_generate_id(prefix: str = "globex") -> str:
     """Generate a pseudo‑random identifier."""
     import uuid
     return f"{prefix}-{uuid.uuid4()}"
 
-def globex_timestamp() -> str:
+def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
     return datetime.datetime.utcnow().isoformat() + "Z"
@@ -93,18 +93,18 @@ Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
-logger = logging.getLogger("globex_demo")
+logger = logging.getLogger("chroma_demo")
 
-def globex_slugify(text: str) -> str:
+def chroma_slugify(text: str) -> str:
     """Convert text to a URL-friendly slug."""
     return text.lower().replace(" ", "-")
 
-def globex_generate_id(prefix: str = "globex") -> str:
+def chroma_generate_id(prefix: str = "globex") -> str:
     """Generate a pseudo‑random identifier."""
     import uuid
     return f"{prefix}-{uuid.uuid4()}"
 
-def globex_timestamp() -> str:
+def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
     return datetime.datetime.utcnow().isoformat() + "Z"
@@ -115,6 +115,6 @@ Its main purpose is to demonstrate bulk renaming operations.
 
 """
 import logging
-logger = logging.getLogger("globex_demo")
+logger = logging.getLogger("chroma_demo")
 
-def globex_slugify(text: str) -> str:
+def chroma_slugify(text: str) -> str:
