@@ -20,7 +20,7 @@ def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma
         replaced = pattern.sub(target_prefix, text)
         if replaced != text:
             path.write_text(replaced)
-            print(f"Updated {{path}}")
+            print(f"Updated {path}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -48,7 +48,7 @@ def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma
         replaced = pattern.sub(target_prefix, text)
         if replaced != text:
             path.write_text(replaced)
-            print(f"Updated {{path}}")
+            print(f"Updated {path}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -76,7 +76,7 @@ def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma
         replaced = pattern.sub(target_prefix, text)
         if replaced != text:
             path.write_text(replaced)
-            print(f"Updated {{path}}")
+            print(f"Updated {path}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -104,7 +104,7 @@ def bulk_rename(root_path: str, source_prefix: str, target_prefix: str = "chroma
         replaced = pattern.sub(target_prefix, text)
         if replaced != text:
             path.write_text(replaced)
-            print(f"Updated {{path}}")
+            print(f"Updated {path}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

@@ -1,4 +1,4 @@
-# 🔄 Chroma ➜ Chroma Bulk‑Rename Demo
+# 🔄 Legacy Prefix ➜ Chroma Bulk‑Rename Demo
 *GitHub Copilot Fundamentals Lab*
 
 ---
@@ -135,7 +135,7 @@ python -m pytest -q      # sanity check – should pass
 | Step | Prompt |
 |------|--------|
 | Dry‑run | `@agent run python cli/rename.py --path . --check` |
-| Open PR | `@agent commit all, open PR "chore: chroma → chroma bulk rename"` |
+| Open PR | `@agent commit all, open PR "chore: legacy prefix → chroma bulk rename"` |
 | PR summary & review | In PR comment box → `@copilot review` → **Apply patch** if happy |
 
 - For the dry run, it should report 0 files modified because its a dry run.
