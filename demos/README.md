@@ -14,7 +14,7 @@ Welcome to the comprehensive collection of GitHub Copilot demonstrations and tra
 
 #### 🛠️ **Development Workflows**
 - **[Copilot Operations](copilot-operations/)** - Real-world phone number validation with Python. Shows how to use Copilot for operational code with proper error handling and regex patterns.
-- **[Copilot Features](copilot-features/)** - Enterprise-grade bulk rename demo. Complete codebase transformation from "globex_" to "chroma_" using Copilot Agent, PR summaries, and automated testing workflows.
+- **[Copilot Features](copilot-features/)** - Enterprise-grade bulk rename demo. Complete codebase transformation from a legacy prefix to "chroma_" using Copilot Agent, PR summaries, and automated testing workflows.
 - **[Node Calculator](Node-calculator/)** - Step-by-step calculator build with Node.js. Perfect for demonstrating prompt engineering, test-driven development, and package.json configuration with Copilot.
 
 #### 🎯 **Advanced Techniques**

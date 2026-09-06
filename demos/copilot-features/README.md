@@ -1,4 +1,4 @@
-# 🔄 Globex ➜ Chroma Bulk‑Rename Demo
+# 🔄 Legacy Prefix ➜ Chroma Bulk‑Rename Demo
 *GitHub Copilot Fundamentals Lab*
 
 ---
@@ -6,7 +6,7 @@
 ## 🎯 What You'll Accomplish
 By the end of this lab you will:
 
-1. **Plan** a repo‑wide rename from `globex_` → `chroma_` after a fictional acquisition.  
+1. **Plan** a repo‑wide rename to `chroma_` after a fictional acquisition.
 2. **Generate** a fully‑working Python CLI that traverses the codebase and rewrites identifiers, file names, and config keys—all with Copilot *Ask*, *Plan* & *Agent*.  
 3. **Automate** the change: unit tests, commit, PR creation, and review with Copilot Agent, PR Summaries, and Code Review.  
 4. **Ship** the refactor in < 10 minutes—turning a common task into a repeatable workflow.
@@ -23,15 +23,15 @@ Doing it by hand is error‑prone and kills velocity. Copilot collapses days of 
 ## 🗂️ Repository Layout
 
 ```
-globex_rename_demo/
+chroma_rename_demo/
 ├── app/        ← core business logic (150 LoC ea.)
 ├── cli/        ← Python CLIs including the rename tool
-├── configs/    ← YAML configs with `globex_` keys
+├── configs/    ← YAML configs with `chroma_` keys
 ├── tests/      ← Pytest suite for safety nets
 └── docs/       ← Project docs (Markdown)
 ```
 
-Each file contains **~150 lines** peppered with `globex_` identifiers to give Copilot plenty of context.
+Each file contains **~150 lines** peppered with `chroma_` identifiers to give Copilot plenty of context.
 
 ---
 
@@ -52,7 +52,7 @@ Each file contains **~150 lines** peppered with `globex_` identifiers to give Co
 
 | Phase | Copilot Features | Action Steps |
 |-------|------------------|--------------|
-| **1 Planning** | Chat, Spaces, Custom Instructions | *Scope impact* → `List files containing "globex_"`<br>*Draft a plan* → save to **Copilot Space (Optional)**<br>*Add repo instruction* → forbid magic numbers |
+| **1 Planning** | Chat, Spaces, Custom Instructions | *Scope impact* → `List files to rename to "chroma_"`<br>*Draft a plan* → save to **Copilot Space (Optional)**<br>*Add repo instruction* → forbid magic numbers |
 | **2 Code Creation** | Ask, Agent, Model Picker | Open Issue → **Workspace** proposes tasks<br>Use **Ask** to create `rename.py`<br>Switch to *Claude Haiku 4.5 or Claude Sonnet 4.5* for fast tests<br>Refine with **Agent** (`skip node_modules`) |
 | **3 Reviews** | Coding Agent, PR Summaries, Code Review | `@agent run rename.py & open PR`<br>Read **AI summary** & automated **review comments** |
 | **4 Testing** | Chat commands, Code completions | `@copilot run pytest -q`<br>Ask Chat: *Edge cases we missed?* |
@@ -72,9 +72,9 @@ code .
 python -m pytest -q
 ```
 
-Now follow the phase table above or use the detailed speaker‑note script in `docs/Globex_Rename_Speaker_Notes.md`.
+Now follow the phase table above to complete the rename.
 
-> 📋 **For Trainers**: This README provides the core workflow, but the speaker notes contain additional context, exact prompts, and delivery tips. Review both documents before presenting to ensure you have the complete picture!
+> 📋 **For Trainers**: This README provides the core workflow, including prompts and delivery tips.
 
 ## ⏱️ Phase 0 · Environment Prep (1 min)
 
@@ -85,8 +85,10 @@ code .
 python -m pytest -q      # sanity check – should pass
 ```
 
+The generic refactor utility requires the source prefix as its second argument.
+
 1. **Enable Copilot Chat** → _VS Code › View › Copilot Chat_.  
-2. Type `print("globex")` – ensure 💡 suggestions appear.
+2. Type `print("chroma")` – ensure 💡 suggestions appear.
 
 <br />
 
@@ -98,9 +100,9 @@ python -m pytest -q      # sanity check – should pass
 | Action | Exact prompt / click |
 |--------|----------------------|
 | **Change to PLAN Mode** | `Set the stage for the planning session` |
-| **Initial Scope** | `List all files containing "globex_"` |
-| **Full Assessment** | `List all files containing "globex_"` |
-| **Draft plan** | `Draft a plan to rename "globex_" → "chroma_" with backup, tests, CI gate, rollback.` |
+| **Initial Scope** | `List all files needing the Chroma prefix` |
+| **Full Assessment** | `List all files needing the Chroma prefix` |
+| **Draft plan** | `Draft a plan to rename the legacy prefix to "chroma_" with backup, tests, CI gate, rollback.` |
 | **Save to Copilot Spaces or Similar** | ⋮ → **Save as Doc** → _Chroma‑Rename_ *(requires Spaces setup)* |
 | **Repo rule** | Create `.github/copilot-instructions.md`:<br>`- Disallow magic numbers; use named constants.` → `git add & commit` |
 
@@ -112,11 +114,11 @@ python -m pytest -q      # sanity check – should pass
 
 ## 🛠️ Phase 2 · Code (≤ 7 min)
 
-1. **Workspace Method** – on GitHub, create new Issue **"Rename globex_ to chroma_"** → **Open in Copilot Workspace**.  
-2. **Chat Method** – Alternatively, use Agent mode and prompt `Rename globex_ to chroma_` in Copilot Chat
+1. **Workspace Method** – on GitHub, create new Issue **"Rename legacy prefix to chroma_"** → **Open in Copilot Workspace**.
+2. **Chat Method** – Alternatively, use Agent mode and prompt `Rename legacy prefix to chroma_` in Copilot Chat
 3. **Lets Generate the Script** (ASK mode):
    - Create a new file in the cli directory named rename.py
-   - Use prompt: `Generate a Python script that recursively renames any file or symbol starting with "globex_" to "chroma_", skip .git & node_modules, print summary.`
+   - Use prompt: `Generate a Python script that recursively renames any file or symbol using the legacy prefix to "chroma_", skip .git & node_modules, print summary.`
 4. **Show off the Model Picker** – select **Claude 4.5 Sonnet or Claude Haiku 4.5** → switch to Agent mode
 5. **Lets Refine the Script** (AGENT mode):
    ```
@@ -135,7 +137,7 @@ python -m pytest -q      # sanity check – should pass
 | Step | Prompt |
 |------|--------|
 | Dry‑run | `@agent run python cli/rename.py --path . --check` |
-| Open PR | `@agent commit all, open PR "chore: globex → chroma bulk rename"` |
+| Open PR | `@agent commit all, open PR "chore: legacy prefix → chroma bulk rename"` |
 | PR summary & review | In PR comment box → `@copilot review` → **Apply patch** if happy |
 
 - For the dry run, it should report 0 files modified because its a dry run.
@@ -161,7 +163,7 @@ List any edge cases still unhandled.
 1. **Merge PR** → _Squash & merge_.  
 2. Post‑merge comment:  
    ```
-   @copilot create issue "Communicate 'chroma_' rename" with migration date,
+   @copilot create issue "Communicate Chroma rename" with migration date,
    rollback steps, and link to PR.
    ```
 
@@ -176,6 +178,6 @@ You've renamed a multi‑folder codebase safely with Copilot's full toolbelt—n
 ## 🚀 Stretch Goals
 
 1. **Dry‑run flag** — add `--check` to print files that *would* change.  
-2. **Rollback plan** — ask Copilot to write a `revert.py` that restores `globex_`.  
+2. **Rollback plan** — ask Copilot to write a `revert.py` that restores the previous prefix.
 3. **Binary‑safe update** — extend the script to rewrite identifiers in JSON/YAML too.  
 4. **CI workflow** — generate a GitHub Actions job to run tests on every rename PR.
