@@ -108,13 +108,3 @@ def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
     return datetime.datetime.utcnow().isoformat() + "Z"
-"""chroma demo file
-
-This file is part of the Chroma Inc. codebase.
-Its main purpose is to demonstrate bulk renaming operations.
-
-"""
-import logging
-logger = logging.getLogger("chroma_demo")
-
-def chroma_slugify(text: str) -> str:
