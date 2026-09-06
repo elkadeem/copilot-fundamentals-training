@@ -25,34 +25,21 @@ Paste the ISSUE.md file into a new issue in that repository.
 
 ## Ticket Triage Policy (Current)
 
-We currently triage support tickets using Severity only.
+Triage daily: confirm impact and workaround, assign severity and priority, then assign an owner and next action.
 
 ### Severity levels
-- Low means minor annoyance with an easy workaround
-- Medium means a meaningful user impact but workarounds exist
-- High means blocks key workflows or causes data loss
+Low: minor annoyance with an easy workaround. Medium: meaningful impact with a workaround. High: blocks key workflows or causes data loss.
 
 ### Priority levels
-- **P0 — Critical:** Active widespread outage, security incident, or data loss; respond immediately.
-- **P1 — High:** Major customer impact or a blocked key workflow; address next.
-- **P2 — Normal:** Meaningful impact with a workaround; schedule in the current planning cycle.
-- **P3 — Low:** Minor impact or improvement; address when capacity allows.
+| Priority | Meaning |
+| --- | --- |
+| P0 | Active widespread outage, security incident, or data loss; respond immediately. |
+| P1 | Major customer impact or blocked key workflow; address next. |
+| P2 | Meaningful impact with a workaround; schedule this planning cycle. |
+| P3 | Minor impact or improvement; address when capacity allows. |
 
 ### Default severity-to-priority mapping
-| Severity | Default priority |
-| --- | --- |
-| High | P1 |
-| Medium | P2 |
-| Low | P3 |
-
-Use P0 only when the ticket describes an active critical incident, regardless of its initial severity.
+High → P1; Medium → P2; Low → P3. Use P0 for an active critical incident, regardless of initial severity.
 
 ### How to triage in 60 seconds
-1. Confirm the customer impact and whether a workaround exists.
-2. Assign the severity.
-3. Apply the default priority, or escalate an active critical incident to P0.
-4. Assign an owner and record the next action.
-
-### Triage rules
-- Triage happens daily.
-- Address P0 tickets immediately, then work in priority order.
+1. Confirm impact and workaround. 2. Assign severity. 3. Apply the default priority (or P0). 4. Assign owner and next action.
