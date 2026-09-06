@@ -83,9 +83,9 @@ git clone https://github.com/ps-copilot-sandbox/copilot-fundamentals-training
 cd demos/copilot-features
 code .
 python -m pytest -q      # sanity check – should pass
-# The generic refactor utility requires the source prefix as its second argument.
-python cli/chroma_refactor.py . <legacy-prefix>
 ```
+
+The generic refactor utility requires the source prefix as its second argument.
 
 1. **Enable Copilot Chat** → _VS Code › View › Copilot Chat_.  
 2. Type `print("chroma")` – ensure 💡 suggestions appear.

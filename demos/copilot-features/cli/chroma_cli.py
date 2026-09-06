@@ -9,7 +9,7 @@ import logging
 logger = logging.getLogger("chroma_demo")
 
 import argparse
-from chroma_service import ChromaService
+from app.chroma_service import ChromaService
 
 def main():
     parser = argparse.ArgumentParser(description="Chroma CLI utility")

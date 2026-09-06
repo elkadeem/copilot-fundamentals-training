@@ -19,7 +19,7 @@ def chroma_generate_id(prefix: str = "chroma") -> str:
 def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    return datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
 """chroma demo file
 
 This file is part of the Chroma Inc. codebase.
@@ -41,7 +41,7 @@ def chroma_generate_id(prefix: str = "chroma") -> str:
 def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    return datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
 """chroma demo file
 
 This file is part of the Chroma Inc. codebase.
@@ -63,7 +63,7 @@ def chroma_generate_id(prefix: str = "chroma") -> str:
 def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    return datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
 """chroma demo file
 
 This file is part of the Chroma Inc. codebase.
@@ -85,7 +85,7 @@ def chroma_generate_id(prefix: str = "chroma") -> str:
 def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    return datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
 """chroma demo file
 
 This file is part of the Chroma Inc. codebase.
@@ -107,4 +107,4 @@ def chroma_generate_id(prefix: str = "chroma") -> str:
 def chroma_timestamp() -> str:
     """Return an ISO‑8601 timestamp."""
     import datetime
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    return datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
