@@ -54,5 +54,5 @@ Use P0 only when the ticket describes an active critical incident, regardless of
 4. Assign an owner and record the next action.
 
 ### Triage rules
-- Triage happens daily
+- Triage happens daily.
 - Address P0 tickets immediately, then work in priority order.
